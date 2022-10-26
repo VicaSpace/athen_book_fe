@@ -1,0 +1,28 @@
+.avatar {
+    margin: 10px;
+}
+
+.userInfoContainer {
+    margin: 10px;
+}
+
+.userName {
+    font-family: 'Average';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.28px;
+    color: #333333;
+}
+
+.greeting {
+    font-family: 'Average';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.28px;
+    color: #828282;
+}
