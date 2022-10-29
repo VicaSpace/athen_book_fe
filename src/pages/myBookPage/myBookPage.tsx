@@ -1,12 +1,8 @@
-import { Box } from '@chakra-ui/react'
 import React from 'react'
 
-function MyBookPage () {
-
+const MyBookPage = () => {
     return (
-        <Box>
-            My Book Page
-        </Box>
+        <div>My Book Page</div>
     )
 }
 

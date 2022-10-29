@@ -1,34 +1,50 @@
+.bookComponentContainer {
+    width: 111.54px;
+    flex-direction: column;
+    display: flex;
+    padding: 10px;
+}
+
+.bookImg {
+    width: 111.54px;
+    height: 151.19px;
+}
+
 .bookName {
     font-family: 'Average';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    color: #333333;
+    text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
 }
 
-.author {
+.bookAuthor {
     font-family: 'Average';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
-
     color: #828282;
 }
 
-.price {
+.bookPrice {
     font-family: 'Average';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    color: #333333;
+}
 
+.bookPrice1 {
+    font-family: 'Average';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 19px;
     color: #333333;
 }

@@ -1,24 +1,22 @@
-import { Box, Flex } from '@chakra-ui/react'
-import React from 'react'
-import { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { useIndexedDB } from 'react-indexed-db'
+import Book from '../../models/Book'
 import BookComponent from '../bookComponent/bookComponent'
-import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu'
-import { keyboard } from '@testing-library/user-event/dist/keyboard'
+import './bookListComponent.css'
 
-const BookListComponent: React.FC<{ books: any }> = ({ books }) => {
-    console.log(books)
+const BookListComponent = () => {
+    const { getAll } = useIndexedDB('book')
 
-    const [booksData, setBookData] = useState()
+    const [books, setBooks] = useState([])
+
+    useEffect(() => {
+        getAll().then(booksFromDB => setBooks(booksFromDB))
+    }, [])
 
     return (
-        <ScrollMenu>
-            {/* {[...Array(9)].map((e, i) => <BookComponent key={i} book={books[i as unknown as string]}/>)} */}
-            <BookComponent book={books[1]}/>
-            <BookComponent book={books[2]}/>
-            <BookComponent book={books[3]}/>
-            <BookComponent book={books[4]}/>
-            <BookComponent book={books[5]}/>
-        </ScrollMenu>  
+        <div className='bookListContainer'>
+            {books.map((book: Book) => <BookComponent key={book.id} book={book}/>)}
+        </div>
     )
 }
 

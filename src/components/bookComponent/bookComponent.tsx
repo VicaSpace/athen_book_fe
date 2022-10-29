@@ -1,18 +1,21 @@
-import { Box, Center } from '@chakra-ui/react'
-import { Typography } from '@mui/material'
 import React from 'react'
 import Book from '../../models/Book'
+
 import './bookComponent.css'
 
-const BookComponent: React.FC<{ book: Book }> = ({ book }) => {
-    console.log(book)
+const BookComponent: React.FC<{book: Book}> = ({ book }) => {
     return (
-        <Box maxW='120' borderWidth='1px' borderRadius='lg' overflow='hidden'>
-            <Center><img src={book.img} width={111} height={151}></img></Center>
-            <Typography className='bookName'>{book.name}</Typography>
-            <Typography className='author'>{book.publisher}</Typography>
-            <Typography className='price'>{'$' + book.price}</Typography>
-        </Box>
+        <div className='bookComponentContainer'>
+            <div>
+                <img src={book.img} className='bookImg'></img>
+            </div>
+            <div className='bookName'>{book.name}</div>
+            <div className='bookAuthor'>{book.publisher}</div>
+            <div>
+                <span className='bookPrice'>${Math.floor(book.price)}</span>
+                <span className='bookPrice1'>.{((book.price+'').split('.')[1] ?? '').padEnd(2, '0')}</span>
+            </div>
+        </div>
     )
 }
 

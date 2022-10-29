@@ -1,0 +1,20 @@
+.authorContainer {
+    width: 100px;
+    flex-direction: column;
+    display: flex;
+    padding: 10px;
+}
+
+.imgCropper {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
