@@ -1,0 +1,12 @@
+.searchResultTitle {
+    font-family: 'Average';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.searchContainer {
+}

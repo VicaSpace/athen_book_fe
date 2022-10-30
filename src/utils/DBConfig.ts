@@ -20,6 +20,7 @@ export const DBConfig = {
                 { name: 'rate', keypath: 'rate', options: { unique: false } },
                 { name: 'createdAt', keypath: 'createdAt', options: { unique: false } },
                 { name: 'updatedAt', keypath: 'updatedAt', options: { unique: false } },
+                { name: 'isBookmarked', keypath: 'isBookmarked', options: { unique: false } },
             ]
         },
         {

@@ -18,7 +18,10 @@ const downLoadBookData = async () => {
     const { add } = useIndexedDB('book')
     await axios.get(BASE_URL + '/books').then((res) => {
         res.data.map((book) => {
-            add(book).then(
+            add({
+                ...book,
+                isBookmarked: false
+            }).then(
                 event => {
                     console.log('Book ID Generated: ', event)
                 },

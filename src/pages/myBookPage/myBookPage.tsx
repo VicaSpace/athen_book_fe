@@ -1,8 +1,10 @@
 import React from 'react'
 
+import './myBookPage.css'
+
 const MyBookPage = () => {
     return (
-        <div>My Book Page</div>
+        <div className='myBookContainer'>My Books</div>
     )
 }
 
