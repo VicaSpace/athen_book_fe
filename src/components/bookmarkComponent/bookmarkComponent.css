@@ -1,0 +1,40 @@
+.bookmarkContainer {
+    display: flex;
+    flex-direction: row;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.bookImg {
+    width: 57.94px;
+    height: 78.54px;
+    margin: 0px;
+}
+
+.bookmarkDetailContainer {
+}
+
+.bookDetailContainer {
+    margin-left: 18px;
+    margin-right: 31px;
+}
+
+.bookName {
+    font-family: 'Average';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+}
+
+.bookAuthor {
+    font-family: 'Average';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #9797AA;
+}

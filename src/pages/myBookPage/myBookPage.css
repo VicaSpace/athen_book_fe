@@ -1,11 +1,14 @@
-.myBookContainer {
+.myBookTitle {
     font-family: 'Average';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
     margin-top: 20px;
+}
+
+.myBookContainer {
+
 }

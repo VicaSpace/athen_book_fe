@@ -24,9 +24,6 @@ const downLoadBookData = async () => {
             }).then(
                 event => {
                     console.log('Book ID Generated: ', event)
-                },
-                error => {
-                    console.log(error)
                 }
             )
         })
@@ -41,9 +38,6 @@ const downLoadAuthorData = async () => {
             add(author).then(
                 event => {
                     console.log('Author ID Generated: ', event)
-                },
-                error => {
-                    // console.log(error)
                 }
             )
         })
