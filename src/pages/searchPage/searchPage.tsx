@@ -6,21 +6,21 @@ import SearchComponent from '../../components/searchComponent/searchComponent'
 import './searchPage.css'
 
 const SearchPage = () => {
-
     const [books, setBooks] = useState([])
 
     const { getAll } = useIndexedDB('book')
 
     useEffect(() => {
-        getAll().then(booksFromDB => setBooks(booksFromDB))
+        getAll().then((booksFromDB) => setBooks(booksFromDB))
     }, [])
 
     return (
-        <div className='searchPageContainer'>
+        <div className="searchPageContainer">
             <SearchComponent />
-            <br/><br/>
-            <div className='allBookTitle'>All Books</div>
-            <BookListComponent books={books}/>
+            <br />
+            <br />
+            <div className="allBookTitle">All Books</div>
+            <BookListComponent books={books} />
         </div>
     )
 }
